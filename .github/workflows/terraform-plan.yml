@@ -1,7 +1,6 @@
-name: Pipeline
+name: 'Terraform Plan'
 
 on:
-  push:
   pull_request:
 
   workflow_dispatch:
@@ -13,7 +12,7 @@ env:
   CONFIG_DIRECTORY: "./"  
 
 jobs:
-  terraform-plan:
+  terraform:
     runs-on: ubuntu-latest
     permissions:
       contents: read
