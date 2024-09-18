@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      
+  workflow_dispatch:      
 
 env:
   TF_CLOUD_ORGANIZATION: "perisatto"
@@ -30,6 +32,9 @@ jobs:
 
       - name: Create Apply Run
         uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
+        env:
+          TF_VAR_DB_USER: '"${{secrets.TF_VAR_DB_USER}}"'
+          TF_VAR_DB_PASSWORD: '"${{secrets.TF_VAR_DB_PASSWORD}}"'        
         id: apply-run
         with:
           workspace: ${{ env.TF_WORKSPACE }}
