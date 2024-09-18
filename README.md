@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MenuGuru
 
 Este repositório contém os scripts de Terraform para o Banco de Dados da aplicação [Menuguru](https://github.com/perisatto/menuguru), que implementa um sistema fictício de gestão de pedidos para restaurantes como parte do trabalho de avaliação do curso de Pós Graduação em Software Architecture da FIAP.
@@ -36,3 +37,8 @@ $ terraform validate
 ``` bash
 $ terraform apply
 ```
+=======
+# menuguru-database
+
+<h1>
+>>>>>>> branch 'feature/actions' of https://github.com/perisatto/menuguru-database.git
