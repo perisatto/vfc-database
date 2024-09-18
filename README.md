@@ -1,4 +1,3 @@
-
 # MenuGuru
 
 Este repositório contém os scripts de Terraform para o Banco de Dados da aplicação [Menuguru](https://github.com/perisatto/menuguru), que implementa um sistema fictício de gestão de pedidos para restaurantes como parte do trabalho de avaliação do curso de Pós Graduação em Software Architecture da FIAP.
