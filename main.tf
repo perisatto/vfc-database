@@ -11,11 +11,13 @@ terraform {
 
 variable "DB_USER" {
   type = string
+  default   = var.TF_VAR_DB_USER
   sensitive = true
 }
 
 variable "DB_PASSWORD" {
   type = string
+  default   = var.TF_VAR_DB_PASSWORD
   sensitive = true
 }
 
@@ -47,8 +49,8 @@ resource "aws_db_instance" "menuguru" {
   allocated_storage    =  20
   engine_version       = "8.0"
   instance_class       = "db.t4g.micro"
-  username             = '"${var.DB_USER}"'
-  password             = '"${var.DB_PASSWORD}"'
+  username             = "${var.DB_USER}"
+  password             = "${var.DB_PASSWORD}"
   parameter_group_name = "default.mysql8.0"
   vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
   skip_final_snapshot  = true
