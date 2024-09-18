@@ -9,11 +9,11 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-variable "db_user" {
+variable "DB_USER" {
   type = string
 }
 
-variable "db_password" {
+variable "DB_PASSWORD" {
   type = string
 }
 
@@ -45,8 +45,8 @@ resource "aws_db_instance" "menuguru" {
   allocated_storage    =  20
   engine_version       = "8.0"
   instance_class       = "db.t4g.micro"
-  username             = "${var.db_user}"
-  password             = "${var.db_password}"
+  username             = "${var.DB_USER}"
+  password             = "${var.DB_PASSWORD}"
   parameter_group_name = "default.mysql8.0"
   vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
   skip_final_snapshot  = true
