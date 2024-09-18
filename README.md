@@ -1,23 +1,23 @@
 # MenuGuru
 
-Este repositÃ³rio contÃ©m os scripts de Terraform para o Banco de Dados da aplicaÃ§Ã£o [Menuguru](https://github.com/perisatto/menuguru), que implementa um sistema fictÃ­cio de gestÃ£o de pedidos para restaurantes como parte do trabalho de avaliaÃ§Ã£o do curso de PÃ³s GraduaÃ§Ã£o em Software Architecture da FIAP.
+Este repositório contém os scripts de Terraform para o Banco de Dados da aplicação [Menuguru](https://github.com/perisatto/menuguru), que implementa um sistema fictício de gestção de pedidos para restaurantes como parte do trabalho de avaliação do curso de Pós Graduação em Software Architecture da FIAP.
 
-O MenuGuru tem como objetivo principal registrar e acompanhar o status de pedidos para restaurantes, onde o cliente pode realizar seu pedido e acompanhar o status do mesmo atÃ© a retirada.
+O MenuGuru tem como objetivo principal registrar e acompanhar o status de pedidos para restaurantes, onde o cliente pode realizar seu pedido e acompanhar o status do mesmo até a retirada.
 
 Funcionalidades:
-* Cadastro e IdentificaÃ§Ã£o de Clientes
-* GestÃ£o de Produtos (criaÃ§Ã£o, consulta, ediÃ§Ã£o e remoÃ§Ã£o)
-* GestÃ£o de Pedidos (solicitaÃ§Ã£o, consulta e finalizaÃ§Ã£o de pedidos)
-* IntegraÃ§Ã£o com Mercado Pago para processamento dos pagamentos
+* Cadastro e Identificação de Clientes
+* Gestão de Produtos (criação, consulta, edição e remoção)
+* Gestão de Pedidos (solicitaçã£o, consulta e finalização de pedidos)
+* Integração com Mercado Pago para processamento dos pagamentos
 
-# Guia para execuÃ§Ã£o do projeto
+# Guia para execução do projeto
 
-## PrÃ©-Requisitos
+## Pré-Requisitos
 
 * Terraform CLI
 * AWS CLI
 
-## ExecuÃ§Ã£o
+## Execução
 
 1. Execute o comando para inicializar o Terraform
 
@@ -25,19 +25,14 @@ Funcionalidades:
 $ terraform init
 ```
 
-2. Execute o comando para validaÃ§Ã£o dos scripts
+2. Execute o comando para validação dos scripts
 
 ``` bash
 $ terraform validate
 ```
 
-3. Execute o comando para aplicar as alteraÃ§Ãµes
+3. Execute o comando para aplicar as alterações
 
 ``` bash
 $ terraform apply
 ```
-=======
-# menuguru-database
-
-<h1>
->>>>>>> branch 'feature/actions' of https://github.com/perisatto/menuguru-database.git
