@@ -25,17 +25,17 @@ jobs:
       - name: Upload Configuration
         uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
         id: plan-upload
-        env:
-          TF_VAR_DB_USER: "${{secrets.TF_VAR_DB_USER}}"
-          TF_VAR_DB_PASSWORD: "${{secrets.TF_VAR_DB_PASSWORD}}"        
         with:
           workspace: ${{ env.TF_WORKSPACE }}
           directory: ${{ env.CONFIG_DIRECTORY }}
           speculative: true
-          
+                    
       - name: Create Plan Run
         uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
         id: plan-run
+        env:
+          TF_VAR_DB_USER: '"${{secrets.TF_VAR_DB_USER}}"'
+          TF_VAR_DB_PASSWORD: '"${{secrets.TF_VAR_DB_PASSWORD}}"'
         with:
           workspace: ${{ env.TF_WORKSPACE }}
           configuration_version: ${{ steps.plan-upload.outputs.configuration_version_id }}
