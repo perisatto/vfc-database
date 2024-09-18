@@ -11,13 +11,11 @@ terraform {
 
 variable "DB_USER" {
   type = string
-  default   = var.TF_VAR_DB_USER
   sensitive = true
 }
 
 variable "DB_PASSWORD" {
   type = string
-  default   = var.TF_VAR_DB_PASSWORD
   sensitive = true
 }
 
