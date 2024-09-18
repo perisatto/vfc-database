@@ -9,6 +9,16 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+variable "DB_USER" {
+  type = string
+  default = "root"
+}
+
+variable "DB_PASSWORD" {
+  type = string
+  default = "root"
+}
+
 provider "aws" {
   region = "us-east-1"
 }
