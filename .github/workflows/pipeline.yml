@@ -2,7 +2,6 @@ name: Pipeline
 
 on:
   push:
-<<<<<<< HEAD
     branches: [ "master" ]
   pull_request:
 
@@ -13,17 +12,6 @@ env:
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
   TF_WORKSPACE: "menuguru"
   CONFIG_DIRECTORY: "./"  
-=======
-  pull_request:
-
-  workflow_dispatch:
-
-env:
-  TF_CLOUD_ORGANIZATION: "perisatto"
-  TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-  TF_WORKSPACE: "menuguru"
-  #CONFIG_DIRECTORY: "./"  
->>>>>>> branch 'feature/actions' of https://github.com/perisatto/menuguru-database.git
 
 jobs:
   terraform-plan:
