@@ -36,3 +36,4 @@ $ terraform validate
 ``` bash
 $ terraform apply
 ```
+.
