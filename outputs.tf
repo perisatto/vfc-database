@@ -4,8 +4,17 @@ output "security_group_id" {
 }
 output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru.endpoint
+}
+
+output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru-customer.endpoint
+}
+
+output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru-product.endpoint
+}
+
+output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru-order.endpoint
 }
 
