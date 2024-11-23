@@ -4,6 +4,9 @@ output "security_group_id" {
 }
 output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru.endpoint
+  value       = aws_db_instance.menuguru-customer.endpoint
+  value       = aws_db_instance.menuguru-product.endpoint
+  value       = aws_db_instance.menuguru-order.endpoint
 }
 
 output "cluster_name" {

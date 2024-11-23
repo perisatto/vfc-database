@@ -59,3 +59,48 @@ resource "aws_db_instance" "menuguru" {
   skip_final_snapshot  = true
   publicly_accessible =  true
 }
+
+#create a RDS Customer Database Instance
+resource "aws_db_instance" "menuguru-customer" {
+  engine               = "mysql"
+  identifier           = "menuguru-customer"
+  allocated_storage    =  20
+  engine_version       = "8.0"
+  instance_class       = "db.t4g.micro"
+  username             = "${var.DB_USER}"
+  password             = "${var.DB_PASSWORD}"
+  parameter_group_name = "default.mysql8.0"
+  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  skip_final_snapshot  = true
+  publicly_accessible =  true
+}
+
+#create a RDS Product Database Instance
+resource "aws_db_instance" "menuguru-product" {
+  engine               = "mysql"
+  identifier           = "menuguru-product"
+  allocated_storage    =  20
+  engine_version       = "8.0"
+  instance_class       = "db.t4g.micro"
+  username             = "${var.DB_USER}"
+  password             = "${var.DB_PASSWORD}"
+  parameter_group_name = "default.mysql8.0"
+  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  skip_final_snapshot  = true
+  publicly_accessible =  true
+}
+
+#create a RDS Order Database Instance
+resource "aws_db_instance" "menuguru-order" {
+  engine               = "mysql"
+  identifier           = "menuguru-order"
+  allocated_storage    =  20
+  engine_version       = "8.0"
+  instance_class       = "db.t4g.micro"
+  username             = "${var.DB_USER}"
+  password             = "${var.DB_PASSWORD}"
+  parameter_group_name = "default.mysql8.0"
+  vpc_security_group_ids = ["${aws_security_group.rds_sg.id}"]
+  skip_final_snapshot  = true
+  publicly_accessible =  true
+}
