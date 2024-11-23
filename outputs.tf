@@ -14,7 +14,7 @@ output "db_product_instance_endpoint" {
   value       = aws_db_instance.menuguru-product.endpoint
 }
 
-output "db_product_instance_endpoint" {
+output "db_order_instance_endpoint" {
   value       = aws_db_instance.menuguru-order.endpoint
 }
 
