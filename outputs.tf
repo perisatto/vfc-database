@@ -6,15 +6,15 @@ output "db_instance_endpoint" {
   value       = aws_db_instance.menuguru.endpoint
 }
 
-output "db_instance_endpoint" {
+output "db_customer_instance_endpoint" {
   value       = aws_db_instance.menuguru-customer.endpoint
 }
 
-output "db_instance_endpoint" {
+output "db_product_instance_endpoint" {
   value       = aws_db_instance.menuguru-product.endpoint
 }
 
-output "db_instance_endpoint" {
+output "db_product_instance_endpoint" {
   value       = aws_db_instance.menuguru-order.endpoint
 }
 
