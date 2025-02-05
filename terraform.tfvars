@@ -1,7 +1,0 @@
-atlas_org_id = "66f8c0198f32cc1e5a589782"
-atlas_project_name = "menuguru"
-environment = "dev"
-cluster_instance_size_name = "M0"
-cloud_provider = "AWS"
-atlas_region = "US_EAST_1"
-mongodb_version = "7.0"
